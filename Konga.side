@@ -18,14 +18,7 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "e2c0541e-a9ad-4af1-910b-1e76d66d71fc",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1440x900",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "468daed6-2630-4ea5-8866-af181fdb5721",
+      "id": "fd8c506d-4873-425d-bd06-0523351fbab7",
       "comment": "",
       "command": "click",
       "target": "linkText=Login / Signup",
@@ -40,7 +33,7 @@
       ],
       "value": ""
     }, {
-      "id": "fd8c506d-4873-425d-bd06-0523351fbab7",
+      "id": "468daed6-2630-4ea5-8866-af181fdb5721",
       "comment": "",
       "command": "click",
       "target": "linkText=Login with",
@@ -57,11 +50,14 @@
       "id": "efc436f5-cf65-4142-982e-778c3c948b33",
       "comment": "",
       "command": "click",
-      "target": "css=.bwm1u5wc > .a8c37x1j",
+      "target": "linkText=Login with",
       "targets": [
-        ["css=.bwm1u5wc > .a8c37x1j", "css:finder"],
-        ["xpath=//div[@id='mount_0_0_CF']/div/div/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div/div/div/div/span/span", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div/div/div/div/div/span/span", "xpath:position"]
+        ["linkText=Login with", "linkText"],
+        ["css=.a8f90_3bLsK", "css:finder"],
+        ["xpath=//main[@id='mainContent']/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.facebook.com/v3.3/dialog/oauth?client_id=609981359188266&redirect_uri=https://www.konga.com/account/login&response_type=code&scope=email,public_profile&state={\"platform\":\"facebook\",\"returnUrl\":\"/\"}')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login with')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
