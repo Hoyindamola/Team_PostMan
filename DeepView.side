@@ -1,0 +1,233 @@
+{
+  "id": "a32b6e73-57f9-4815-ba0e-bed7e32124a0",
+  "version": "2.0",
+  "name": "DeepView",
+  "url": "https://deepview.com/",
+  "tests": [{
+    "id": "c03b7f53-e2c2-41c5-b7f1-bc615aaded92",
+    "name": "Navigate Homepage",
+    "commands": [{
+      "id": "5540baf3-f42b-4ffb-a666-56a4692daf33",
+      "comment": "",
+      "command": "open",
+      "target": "https://deepview.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "525c0781-de32-45b7-befc-209503d39a77",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x877",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3a5fad0-c24b-4ed1-a251-83489694706e",
+      "comment": "",
+      "command": "click",
+      "target": "id=home",
+      "targets": [
+        ["id=home", "id"],
+        ["linkText=Home", "linkText"],
+        ["css=#home", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//a[@id='home']", "xpath:attributes"],
+        ["xpath=//div[@id='nav_cont']/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3cd91060-c60c-4029-ace3-023863bacaa5",
+    "name": "Product Page",
+    "commands": [{
+      "id": "76987c17-3e91-4ef9-8ff5-741adc621d6f",
+      "comment": "",
+      "command": "open",
+      "target": "https://deepview.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3739882-2843-4cfe-a6db-62adf57787c4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x877",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8b56139-c9eb-4f98-8fef-c79343d9184f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.products > #about",
+      "targets": [
+        ["css=.products > #about", "css:finder"],
+        ["xpath=//ins[@id='about']", "xpath:attributes"],
+        ["xpath=//div[@id='nav_cont']/div[3]/ins", "xpath:idRelative"],
+        ["xpath=//ins", "xpath:position"],
+        ["xpath=//ins[contains(.,'Products')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4def8aa-236f-4b0d-9d2f-d62c9a33b9ca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Image Guard",
+      "targets": [
+        ["linkText=Image Guard", "linkText"],
+        ["css=.products-children:nth-child(1) > #about", "css:finder"],
+        ["xpath=//a[contains(text(),'Image Guard')]", "xpath:link"],
+        ["xpath=(//a[@id='about'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='nav_cont']/div[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/products/imageguard')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Image Guard')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e36c5a5f-68c1-4054-a21d-d9d4bc4e4e57",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Chat Guard",
+      "targets": [
+        ["linkText=Chat Guard", "linkText"],
+        ["css=.products-children:nth-child(2) > #about", "css:finder"],
+        ["xpath=//a[contains(text(),'Chat Guard')]", "xpath:link"],
+        ["xpath=(//a[@id='about'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='nav_cont']/div[3]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/products/chatguard')]", "xpath:href"],
+        ["xpath=//div[3]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Chat Guard')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0850b495-74e8-4df2-b333-0fb76303d88c",
+    "name": "Request Demo",
+    "commands": [{
+      "id": "d2a3577f-f68f-48f3-9f4e-55d8075a97f2",
+      "comment": "",
+      "command": "open",
+      "target": "https://deepview.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e5f24d0-9662-402f-bcf0-9f79a6e6b762",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x877",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e035f935-61ff-4cd0-8682-6a8e967d781e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#demo01 span",
+      "targets": [
+        ["css=#demo01 span", "css:finder"],
+        ["xpath=//a[@id='demo01']/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Request Demo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84bddba4-0851-4008-a0b1-d22285eadf1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.input:nth-child(2)",
+      "targets": [
+        ["css=.input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//form[@id='request_form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51d1d0ea-3718-4dd6-a8f8-900369d95ccb",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input:nth-child(2)",
+      "targets": [
+        ["css=.input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//form[@id='request_form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Oyindamola Adedoyin"
+    }, {
+      "id": "b52eeeea-6005-4bb7-b837-2e0c37195adb",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input:nth-child(5)",
+      "targets": [
+        ["css=.input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@type='email']", "xpath:attributes"],
+        ["xpath=//form[@id='request_form']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "oyindamolaadedoyin2@gmail.com"
+    }, {
+      "id": "9f6a939e-31ae-451f-9fe0-7e201a7f541f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input:nth-child(3)",
+      "targets": [
+        ["css=.input:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='request_form']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Bloverse"
+    }, {
+      "id": "3406cb49-6c76-4fd6-b239-bc67a269a596",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input:nth-child(4)",
+      "targets": [
+        ["css=.input:nth-child(4)", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='request_form']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "Manager"
+    }, {
+      "id": "70e15d1c-f7b3-44e3-b1dd-37ab557f5fa6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#request-button > span",
+      "targets": [
+        ["css=#request-button > span", "css:finder"],
+        ["xpath=//button[@id='request-button']/span", "xpath:idRelative"],
+        ["xpath=//form/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Send')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc580341-3608-464b-a864-e5f5fd234cb6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.checkbox:nth-child(1) .styled",
+      "targets": [
+        ["css=.checkbox:nth-child(1) .styled", "css:finder"],
+        ["xpath=//input[@value=' ImageGuard']", "xpath:attributes"],
+        ["xpath=//form[@id='request_form']/div[2]/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6e26baf6-0938-4d57-b063-70fcead0e0a9",
+    "name": "Contact us",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "10c7c242-bc93-4e16-bf8d-c90b3a8693d0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c03b7f53-e2c2-41c5-b7f1-bc615aaded92"]
+  }],
+  "urls": ["https://deepview.com/"],
+  "plugins": []
+}
